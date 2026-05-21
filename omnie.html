@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O mnie</title>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,600;0,700;1,300;1,700&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+
+<!-- Wspólne style projektu -->
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/menu.css">
+<link rel="stylesheet" href="css/socials.css">
+<link rel="stylesheet" href="css/footer.css">
+<!-- Style dla sekcji CTA (Zamów projekt) -->
+<link rel="stylesheet" href="css/zamow.css">
+
+<!-- Specyficzne style dla podstrony O MNIE -->
+<link rel="stylesheet" href="css/omnie.css">
+</head>
+<body>
+
+<div class="cur" id="cur"></div>
+<div class="cur-ring" id="curRing"></div>
+
+<!-- MOBILE MENU -->
+<div class="mob-overlay" id="mobOverlay" onclick="closeMob()"></div>
+<div class="mob-menu" id="mobMenu">
+  <button class="mob-close" onclick="closeMob()">✕</button>
+  <div class="mob-section">
+    <button class="mob-section-btn" id="mobProjBtn" onclick="toggleMobSub()">Projekty <span class="mc">›</span></button>
+    <div class="mob-sub" id="mobSub">
+		<a href="koszulki-sportowe.html" onclick="closeMob()">Koszulki sportowe</a>
+		<a href="fightwear.html"onclick="closeMob()">Fightwear</a>
+		<a href="odziez.html" onclick="closeMob()">Odzież kibicowska</a>
+		<a href="koszulki.html" onclick="closeMob()">Koszulki</a>
+		<a href="flagi.html" onclick="closeMob()">Flagi</a>
+		<a href="oprawy.html" onclick="closeMob()">Oprawy</a>
+		<a href="szaliki.html" onclick="closeMob()">Szaliki</a>
+		<a href="akcesoria.html" onclick="closeMob()">Akcesoria</a>
+    </div>
+  </div>
+  <a href="produkcja.html" class="mob-plain" onclick="closeMob()">Produkcja</a>
+  <a href="omnie.html" class="mob-plain" onclick="closeMob()">O mnie</a>
+  <a href="kontakt.html" class="mob-plain" onclick="closeMob()">Kontakt</a>
+</div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a href="index.html" class="nav-logo">
+    <img src="Image/Template/Logo-sydesign.svg" alt="SYDESIGN">
+    <span class="nav-logo-text">SYDESIGN</span>
+  </a>
+  <ul class="nav-links">
+    <li id="projLi">
+      <button class="nav-link" onclick="toggleProj()">Projekty <span class="nav-chev">▾</span></button>
+      <div class="nav-dropdown">
+		<a href="koszulki-sportowe.html">Koszulki sportowe</a>
+		<a href="fightwear.html">Fightwear</a>
+		<a href="odziez.html">Odzież kibicowska</a>
+		<a href="koszulki.html">Koszulki</a>
+		<a href="flagi.html"class="cat-active">Flagi</a>
+		<a href="oprawy.html">Oprawy</a>
+		<a href="szaliki.html">Szaliki</a>
+		<a href="akcesoria.html">Akcesoria</a>
+      </div>
+    </li>
+    <li><a href="produkcja.html" class="nav-link">Produkcja</a></li>
+    <li><a href="omnie.html" class="nav-link active">O mnie</a></li>
+    <li><a href="kontakt.html" class="nav-link">Kontakt</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" onclick="toggleMob()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ══ SECTION 1: INTRO ══ -->
+<section class="intro">
+  <div class="intro-left">
+    <div class="intro-badge">
+      <div class="badge-logo">
+       
+      </div>
+    
+    </div>
+    <p class="intro-eyebrow">for Ultras & Hooligans</p>
+    <h1 class="intro-name">
+      SYDESIGN
+    </h1>
+    <div class="intro-role">
+      <div class="role-pill">
+        <div class="role-dot"></div>
+        Dostępny do współpracy
+      </div>
+      <div class="role-pill" style="border-color:rgba(255,255,255,.1)">
+        Polska&nbsp;/&nbsp;EU
+      </div>
+    </div>
+  </div>
+  <div class="intro-right">
+    <img class="intro-right-img" src="image_no" alt="[Zdjęcie Autora]">
+  </div>
+  <div class="intro-scroll">
+    <span class="scroll-word">Scroll</span>
+    <div class="scroll-bar"></div>
+  </div>
+</section>
+
+<!-- ══ SECTION 2: MANIFESTO ══ -->
+<section class="manifesto">
+  <div class="manifesto-ghost">PASJA</div>
+  <div class="manifesto-inner reveal">
+    <div>
+      <p class="manifesto-label">O co w tym chodzi</p>
+      <div class="manifesto-counter">01</div>
+    </div>
+    <div class="manifesto-text">
+      <h2 class="manifesto-quote">
+        Projektuje dla ludzi,<br>którzy <em>żyją</em> piłką.
+      </h2>
+      <p class="manifesto-body">
+        SYDESIGN to nie agencja, nie korporacja. To jeden człowiek z pasją do futbolu i obsesją na punkcie detalu. Od lat tworzę identyfikację wizualną dla sekcji ultras, drużyn fightwearowych i ekip kibicowskich z całej Polski.
+        <br><br>
+        Każdy projekt zaczyna się od rozmowy. Rozumiem kulturę, z której pochodzi mój klient — dlatego moje projekty nie wyglądają jak coś zrobionego przez kogoś, kto nigdy nie stał na trybuny.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SECTION 3: STATS ══ -->
+<section class="stats-section">
+  <div class="stats-marquee-bg">
+    <div class="stats-marquee-text">SYDESIGN SYDESIGN SYDESIGN SYDESIGN SYDESIGN SYDESIGN &nbsp;</div>
+    <div class="stats-marquee-text" aria-hidden="true">SYDESIGN SYDESIGN SYDESIGN SYDESIGN SYDESIGN SYDESIGN &nbsp;</div>
+  </div>
+  <div class="stats-grid">
+    <div class="stat-block reveal">
+      <div class="stat-num"><span id="s1">0</span><sup>+</sup></div>
+      <div class="stat-label">Zrealizowanych<br>projektów</div>
+    </div>
+    <div class="stat-block reveal" style="transition-delay:.1s">
+      <div class="stat-num"><span id="s2">0</span><sup>+</sup></div>
+      <div class="stat-label">Zadowolonych<br>klientów</div>
+    </div>
+    <div class="stat-block reveal" style="transition-delay:.2s">
+      <div class="stat-num"><span id="s3">0</span><sup>+</sup></div>
+      <div class="stat-label">Lat<br>doświadczenia</div>
+    </div>
+    <div class="stat-block reveal" style="transition-delay:.3s">
+      <div class="stat-num"><span id="s4">0</span><sup>%</sup></div>
+      <div class="stat-label">Projektów<br>od zera</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SECTION 4: PROCESS ══ -->
+<section class="process-section">
+  <div class="process-header reveal">
+    <div class="process-title-wrap">
+      <p class="process-eyebrow">Jak pracuję</p>
+      <h2 class="process-title">Mój<br>proces</h2>
+    </div>
+    <p class="process-sub">Od pierwszego kontaktu do gotowego produktu — prosto, bez zbędnych etapów.</p>
+  </div>
+  <div class="steps">
+    <div class="step reveal" style="transition-delay:.05s">
+      <div class="step-num">01</div>
+      <h3 class="step-title">Rozmowa</h3>
+      <p class="step-desc">Zaczynamy od briefu. Opowiedz mi o swoim klubie, ekipie, stylu i potrzebach. Im więcej wiem — tym lepszy projekt.</p>
+    </div>
+    <div class="step reveal" style="transition-delay:.15s">
+      <div class="step-num">02</div>
+      <h3 class="step-title">Koncepcja</h3>
+      <p class="step-desc">Tworzę propozycję graficzną. Pokazuję kierunek, omawiamy detale, dopieszczamy każdy piksel do momentu aż będziesz w 100% zadowolony.</p>
+    </div>
+    <div class="step reveal" style="transition-delay:.25s">
+      <div class="step-num">03</div>
+      <h3 class="step-title">Produkcja</h3>
+      <p class="step-desc">Jeśli potrzebujesz — zajmuję się całą produkcją. Wycena, kontakt z dostawcami, kontrola jakości — cały proces przejmuję na siebie.</p>
+    </div>
+    <div class="step reveal" style="transition-delay:.35s">
+      <div class="step-num">04</div>
+      <h3 class="step-title">Dostawa</h3>
+      <p class="step-desc">Gotowy projekt lub fizyczny produkt trafia do Ciebie. Prosto, sprawnie, bez zbędnego czekania.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ZAMOW PROJEKT -->
+<div class="inquiry reveal">
+      <p class="inquiry-eyebrow">Zamów projekt</p>
+      <h2 class="inquiry-title">Potrzebujesz projektów<br>dla twojej ekipy?</h2>
+      <p class="inquiry-sub">Zaprojektujemy i załatwimy cały proces produkcji gadzętów kibicowskich od pomysłu po dostawę pod drzwi.</p>
+      <p class="inquiry-fine">Skorzystaj z formularza klikając <a href="mailto:biuro@sydesign.pl">"napisz do nas"</a>, gdzie w prosty sposób opiszesz co potrzebujesz, a my odezwiemy się do Ciebie i zrealizujemy pomysł.</p>
+      <a href="mailto:biuro@sydesign.pl" class="btn-primary">Napisz do nas</a>
+    </div>
+
+<!-- SOCIAL -->
+<div class="social-bar reveal" style="width: 100%;">
+  <a href="https://www.instagram.com/sydesign2013/" target="_blank" rel="noopener" class="social-item">
+    <svg class="social-icon" viewBox="0 0 24 24" fill="none">
+      <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/>
+      <circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.5"/>
+      <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+    </svg>
+    <div class="social-info">
+      <span class="social-name">Instagram</span>
+      <span class="social-handle">@sydesign2013</span>
+    </div>
+    <span class="social-arrow">↗</span>
+  </a>
+  <a href="https://www.facebook.com/SYdesignest2013/" target="_blank" rel="noopener" class="social-item">
+    <svg class="social-icon" viewBox="0 0 24 24" fill="none">
+      <path d="M18 2H15C13.3 2 12 3.3 12 5V8H9V12H12V22H16V12H19L20 8H16V5C16 4.4 16.4 4 17 4H20V2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <div class="social-info">
+      <span class="social-name">Facebook</span>
+      <span class="social-handle">SYdesignest2013</span>
+    </div>
+    <span class="social-arrow">↗</span>
+  </a>
+  <a href="https://www.youtube.com/@sydesign2013" target="_blank" rel="noopener" class="social-item">
+    <svg class="social-icon" viewBox="0 0 24 24" fill="none">
+      <path d="M22 7S21.8 5.5 21.1 4.8C20.2 3.8 19.2 3.8 18.7 3.8C15.6 3.6 12 3.6 12 3.6C12 3.6 8.4 3.6 5.3 3.8C4.8 3.8 3.8 3.8 2.9 4.8C2.2 5.5 2 7 2 7S1.8 8.7 1.8 10.4V12C1.8 13.7 2 15.4 2 15.4S2.2 16.9 2.9 17.6C3.8 18.6 5 18.6 5.6 18.7C7.3 18.8 12 18.9 12 18.9C12 18.9 15.6 18.9 18.7 18.7C19.2 18.6 20.2 18.6 21.1 17.6C21.8 16.9 22 15.4 22 15.4S22.2 13.7 22.2 12V10.4C22.2 8.7 22 7 22 7Z" stroke="currentColor" stroke-width="1.5"/>
+      <polygon points="9.5,8.5 9.5,15.5 15.5,12" fill="currentColor"/>
+    </svg>
+    <div class="social-info">
+      <span class="social-name">YouTube</span>
+      <span class="social-handle">@sydesign2013</span>
+    </div>
+    <span class="social-arrow">↗</span>
+  </a>
+</div>
+
+<!-- FOOTER -->
+<footer id="kontakt">
+  <p>&copy; 2026 SYDESIGN. Wszelkie prawa zastrzeżone.</p>
+  <small>100% &ldquo;nienawiści&rdquo; do kserówek!</small>
+</footer>
+
+<!-- Skrypty wspólne -->
+<script src="js/main.js"></script>
+<script src="js/menu.js"></script>
+
+<!-- Skrypt specyficzny dla tej podstrony -->
+<script src="js/omnie.js"></script>
+
+</body>
+</html>

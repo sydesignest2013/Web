@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SYDESIGN | Charakterni Ludzie — Raków Częstochowa</title>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,600;0,700;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/menu.css">
+<link rel="stylesheet" href="css/project-card.css">
+</head>
+<body>
+<div class="cur" id="cur"></div>
+<div class="cur-ring" id="curRing"></div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a href="index.html" class="nav-logo">
+    <img src="Image/Template/Logo-sydesign.svg" alt="SYDESIGN">
+    <span class="nav-logo-text">SYDESIGN</span>
+  </a>
+  <div class="nav-right">
+    <a href="produkcja-widget.html" class="nav-link">Produkcja</a>
+    <div class="nav-proj-wrap" id="navWrap">
+      <button class="nav-proj-btn" onclick="toggleNav()">Projekty <span class="nav-chev">▾</span></button>
+      <div class="nav-dropdown">
+        <a href="odziez.html">Odzież kibicowska</a>
+        <a href="fightwear.html">Fightwear</a>
+        <a href="flagi.html">Flagi i Oprawy</a>
+        <a href="szaliki.html" class="cat-active">Szaliki</a>
+        <a href="akcesoria.html">Akcesoria</a>
+        <a href="koszulki-sportowe.html">Sport T-Shirts</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <p class="hero-cat">Szalik / Żakard / 2025</p>
+    <h1 class="hero-title">Raków Częstochowa</h1>
+    <p class="hero-sub">Charakterni Ludzie</p>
+    <div class="hero-meta">
+      <span class="hero-tag">Żakard 130cm</span>
+      <span class="hero-tag">Limitowana edycja</span>
+      <span class="hero-tag">100 sztuk</span>
+    </div>
+  </div>
+</div>
+
+<!-- PROCESS PATH -->
+<div class="process">
+  <div class="process-spine"></div>
+  <div class="process-spine-fill" id="spineFill"></div>
+
+  <!-- STEP 1 — PROJEKTOWANIE -->
+  <div class="ps left" id="ps1">
+    <div class="ps-img-wrap" id="img1">
+      <div class="ps-img">
+        <span class="ps-img-num">01</span>
+        <img src="image_no" alt="Projektowanie" loading="lazy">
+      </div>
+    </div>
+    <div class="ps-node">
+      <div class="ps-node-inner"><div class="ps-node-dot"></div></div>
+    </div>
+    <div class="ps-text-wrap" id="txt1">
+      <p class="ps-step-label">Etap 01 / Projektowanie</p>
+      <h2 class="ps-title">Od pomysłu<br>do szkicu</h2>
+      <p class="ps-desc">Wszystko zaczyna się od rozmowy. Zbieramy inspiracje, referencje i historię klubu. Tworzymy wstępny szkic — kilka wariantów kolorystycznych i układu graficznego do wyboru.</p>
+      <div class="ps-tags">
+        <span class="ps-tag">Brief</span>
+        <span class="ps-tag">Koncepcja</span>
+        <span class="ps-tag">Warianty</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 2 — WIZUALIZACJA -->
+  <div class="ps right" id="ps2">
+    <div class="ps-img-wrap" id="img2">
+      <div class="ps-img">
+        <span class="ps-img-num">02</span>
+        <img src="image_no" alt="Wizualizacja" loading="lazy">
+      </div>
+    </div>
+    <div class="ps-node">
+      <div class="ps-node-inner"><div class="ps-node-dot"></div></div>
+    </div>
+    <div class="ps-text-wrap" id="txt2">
+      <p class="ps-step-label">Etap 02 / Wizualizacja</p>
+      <h2 class="ps-title">Gotowy<br>projekt</h2>
+      <p class="ps-desc">Zatwierdzony szkic trafia do finalnej obróbki. Pełna grafika w wektorze — gotowa do druku lub żakardu. Na tym etapie widzisz dokładnie jak będzie wyglądał produkt.</p>
+      <div class="ps-tags">
+        <span class="ps-tag">Grafika finalna</span>
+        <span class="ps-tag">Mock-up</span>
+        <span class="ps-tag">Akceptacja</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 3 — LIFESTYLE -->
+  <div class="ps left" id="ps3">
+    <div class="ps-img-wrap" id="img3">
+      <div class="ps-img">
+        <span class="ps-img-num">03</span>
+        <img src="image_no" alt="Gotowy produkt" loading="lazy">
+      </div>
+    </div>
+    <div class="ps-node">
+      <div class="ps-node-inner"><div class="ps-node-dot"></div></div>
+    </div>
+    <div class="ps-text-wrap" id="txt3">
+      <p class="ps-step-label">Etap 03 / Realizacja</p>
+      <h2 class="ps-title">Produkt<br>w rękach</h2>
+      <p class="ps-desc">Po produkcji i kontroli jakości — gotowy szalik trafia do kibiców. To właśnie ten moment: trybuna, doping, produkt który żyje razem z ekipą.</p>
+      <div class="ps-tags">
+        <span class="ps-tag">Produkcja</span>
+        <span class="ps-tag">Jakość</span>
+        <span class="ps-tag">Dostawa</span>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /process -->
+
+<!-- CTA -->
+<div class="cta">
+  <div class="cta-orb"></div>
+  <p class="cta-eye">Chcesz podobny projekt?</p>
+  <h2 class="cta-title">Zacznijmy<br><span>razem</span></h2>
+  <div class="cta-btns">
+    <a href="formularz.html" class="btn-red">Wyślij zapytanie →</a>
+    <a href="projekt-carousel.html" class="btn-ghost">← Wróć do projektów</a>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2026 SYDESIGN. Wszelkie prawa zastrzeżone.</p>
+  <small>100% &ldquo;nienawiści&rdquo; do kserówek!</small>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/project-card.js"></script>
+</body>
+</html>

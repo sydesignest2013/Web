@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SYDESIGN</title>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,600;0,700;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/menu.css">
+<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/socials.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/zamow.css">
+</head>
+<body>
+<div class="cur" id="cur"></div>
+<div class="cur-ring" id="curRing"></div>
+
+<!-- MOBILE MENU -->
+<div class="mob-overlay" id="mobOverlay" onclick="closeMob()"></div>
+<div class="mob-menu" id="mobMenu">
+  <button class="mob-close" onclick="closeMob()">✕</button>
+  <div class="mob-section">
+    <button class="mob-section-btn" id="mobProjBtn" onclick="toggleMobSub()">Projekty <span class="mc">›</span></button>
+    <div class="mob-sub" id="mobSub">
+		<a href="koszulki-sportowe.html" onclick="closeMob()">Koszulki sportowe</a>
+		<a href="fightwear.html"onclick="closeMob()">Fightwear</a>
+		<a href="odziez.html" onclick="closeMob()">Odzież kibicowska</a>
+		<a href="koszulki.html" onclick="closeMob()">Koszulki</a>
+		<a href="flagi.html" onclick="closeMob()">Flagi</a>
+		<a href="oprawy.html" onclick="closeMob()">Oprawy</a>
+		<a href="szaliki.html" onclick="closeMob()">Szaliki</a>
+		<a href="akcesoria.html" onclick="closeMob()">Akcesoria</a>
+    </div>
+  </div>
+  <a href="produkcja.html" class="mob-plain" onclick="closeMob()">Produkcja</a>
+  <a href="omnie.html" class="mob-plain" onclick="closeMob()">O mnie</a>
+  <a href="kontakt.html" class="mob-plain" onclick="closeMob()">Kontakt</a>
+</div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a href="index.html" class="nav-logo">
+    <img src="Image/Template/Logo-sydesign.svg" alt="SYDESIGN">
+    <span class="nav-logo-text">SYDESIGN</span>
+  </a>
+  <ul class="nav-links">
+    <li id="projLi">
+      <button class="nav-link" onclick="toggleProj()">Projekty <span class="nav-chev">▾</span></button>
+      <div class="nav-dropdown">
+        <a href="koszulki-sportowe.html">Koszulki sportowe</a>
+		<a href="fightwear.html">Fightwear</a>
+		<a href="odziez.html">Odzież kibicowska</a>
+		<a href="koszulki.html">Koszulki</a>
+		<a href="flagi.html">Flagi</a>
+		<a href="oprawy.html">Oprawy</a>
+		<a href="szaliki.html">Szaliki</a>
+		<a href="akcesoria.html">Akcesoria</a>
+      </div>
+    </li>
+    <li><a href="produkcja.html" class="nav-link">Produkcja</a></li>
+    <li><a href="omnie.html" class="nav-link">O mnie</a></li>
+    <li><a href="kontakt.html" class="nav-link">Kontakt</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" onclick="toggleMob()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<div class="hero" id="hero">
+  <div class="hero-slide visible" style="background-image:url('Image/Template/heroslider_1.webp')"></div>
+  <div class="hero-slide" style="background-image:url('Image/Template/heroslider_2.webp')"></div>
+  <div class="hero-slide" style="background-image:url('Image/Template/heroslider_3.webp')"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-grid-lines"></div>
+  <div class="hero-orb"></div>
+
+  <div class="hero-content">
+    <h1 class="hero-title" data-text="SYDESIGN">
+      <span class="solid">SY</span><span class="outline">DESIGN</span>
+    </h1>
+    <p class="hero-tagline">Design & Production for Ultras &amp; Hooligans</p>
+    <div class="hero-pills">
+      <div class="hero-pill"><div class="hero-pill-dot"></div>Szaliki</div>
+      <div class="hero-pill"><div class="hero-pill-dot" style="animation-delay:.4s"></div>Fightwear</div>
+      <div class="hero-pill"><div class="hero-pill-dot" style="animation-delay:.8s"></div>Odzież kibicowska</div>
+      <div class="hero-pill"><div class="hero-pill-dot" style="animation-delay:1.2s"></div>Flagi i Oprawy</div>
+    </div>
+  </div>
+
+  <div class="hero-dots" id="heroDots"></div>
+
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span class="scroll-word">Scroll</span>
+  </div>
+</div>
+
+<!-- CATEGORIES -->
+<div class="cat-section">
+  <div class="cat-header reveal">
+    <div class="cat-header-left">
+      <h2 class="cat-title-sm"></h2>
+    </div>
+    <span class="cat-count"></span>
+  </div>
+
+  <div class="cat-grid reveal">
+
+<a href="koszulki-sportowe.html" class="cat-tile">
+      <img src="Image/categories/koszulki-sportowe-cat.webp" alt="Sport T-Shirts">
+      <div class="cat-tile-glow"></div>
+      <div class="cat-tile-body"><span class="cat-tile-name">Koszulki MESH</span></div>
+    </a>
+	
+	  <a href="fightwear.html" class="cat-tile">
+      <img src="Image/categories/fightwear-cat.webp" alt="Fightwear">
+      <div class="cat-tile-glow"></div>
+      <div class="cat-tile-body"><span class="cat-tile-name">Fightwear</span></div>
+    </a>
+	
+    <a href="odziez.html" class="cat-tile">
+      <img src="Image/categories/odziez-kibicowska-cat.webp" alt="Odzież kibicowska">
+      <div class="cat-tile-glow"></div>
+      <div class="cat-tile-body"><span class="cat-tile-name">Odzież kibicowska</span></div>
+    </a>
+	
+	<a href="koszulki.html" class="cat-tile">
+      <img src="Image/categories/koszulki-cat.webp" alt="Koszulki">
+      <div class="cat-tile-glow"></div>
+      <div class="cat-tile-body"><span class="cat-tile-name">Koszulki</span></div>
+    </a>
+
+
+    <a href="flagi.html" class="cat-tile">
+      <img src="Image/categories/flagi-cat.webp" alt="Flagi">
+      <div class="cat-tile-glow"></div>
+      <div class="cat-tile-body"><span class="cat-tile-name">Flagi</span></div>
+    </a>
+	
+	<a href="oprawy.html" class="cat-tile">
+      <img src="Image/categories/oprawy-cat.webp" alt="Oprawy">
+      <div class="cat-tile-glow"></div>
+      <div class="cat-tile-body"><span class="cat-tile-name">Oprawy</span></div>
+    </a>
+
+    <a href="szaliki.html" class="cat-tile">
+      <img src="Image/categories/szaliki-cat.webp" alt="Szaliki">
+      <div class="cat-tile-glow"></div>
+      <div class="cat-tile-body"><span class="cat-tile-name">Szaliki</span></div>
+    </a>
+
+    <a href="akcesoria.html" class="cat-tile">
+      <img src="Image/categories/akcesoria-cat.webp" alt="Akcesoria">
+      <div class="cat-tile-glow"></div>
+      <div class="cat-tile-body"><span class="cat-tile-name">Akcesoria</span></div>
+    </a>
+
+    
+
+  </div>
+</div>
+<div class="inquiry reveal">
+      <p class="inquiry-eyebrow">Zamów projekt</p>
+      <h2 class="inquiry-title">Chcesz szaliki<br>dla twojej ekipy?</h2>
+      <p class="inquiry-sub">Zaprojektujemy i załatwimy cały proces produkcji od pomysłu po dostawę pod drzwi.</p>
+      <p class="inquiry-fine">Skorzystaj z formularza klikając <a href="mailto:biuro@sydesign.pl">"napisz do nas"</a>, gdzie w prosty sposób opiszesz co potrzebujesz, a my odezwiemy się do Ciebie i zrealizujemy pomysł.</p>
+      <a href="mailto:biuro@sydesign.pl" class="btn-primary">Napisz do nas</a>
+    </div>
+<!-- SOCIAL -->
+<div class="social-bar reveal">
+  <a href="https://www.instagram.com/sydesign2013/" target="_blank" rel="noopener" class="social-item">
+    <svg class="social-icon" viewBox="0 0 24 24" fill="none">
+      <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/>
+      <circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.5"/>
+      <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+    </svg>
+    <div class="social-info">
+      <span class="social-name">Instagram</span>
+      <span class="social-handle">@sydesign2013</span>
+    </div>
+    <span class="social-arrow">↗</span>
+  </a>
+  <a href="https://www.facebook.com/SYdesignest2013/" target="_blank" rel="noopener" class="social-item">
+    <svg class="social-icon" viewBox="0 0 24 24" fill="none">
+      <path d="M18 2H15C13.3 2 12 3.3 12 5V8H9V12H12V22H16V12H19L20 8H16V5C16 4.4 16.4 4 17 4H20V2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <div class="social-info">
+      <span class="social-name">Facebook</span>
+      <span class="social-handle">SYdesignest2013</span>
+    </div>
+    <span class="social-arrow">↗</span>
+  </a>
+  <a href="https://www.youtube.com/@sydesign2013" target="_blank" rel="noopener" class="social-item">
+    <svg class="social-icon" viewBox="0 0 24 24" fill="none">
+      <path d="M22 7S21.8 5.5 21.1 4.8C20.2 3.8 19.2 3.8 18.7 3.8C15.6 3.6 12 3.6 12 3.6C12 3.6 8.4 3.6 5.3 3.8C4.8 3.8 3.8 3.8 2.9 4.8C2.2 5.5 2 7 2 7S1.8 8.7 1.8 10.4V12C1.8 13.7 2 15.4 2 15.4S2.2 16.9 2.9 17.6C3.8 18.6 5 18.6 5.6 18.7C7.3 18.8 12 18.9 12 18.9C12 18.9 15.6 18.9 18.7 18.7C19.2 18.6 20.2 18.6 21.1 17.6C21.8 16.9 22 15.4 22 15.4S22.2 13.7 22.2 12V10.4C22.2 8.7 22 7 22 7Z" stroke="currentColor" stroke-width="1.5"/>
+      <polygon points="9.5,8.5 9.5,15.5 15.5,12" fill="currentColor"/>
+    </svg>
+    <div class="social-info">
+      <span class="social-name">YouTube</span>
+      <span class="social-handle">@sydesign2013</span>
+    </div>
+    <span class="social-arrow">↗</span>
+  </a>
+</div>
+
+<!-- FOOTER -->
+<footer id="kontakt">
+  <p>&copy; 2026 SYDESIGN. Wszelkie prawa zastrzeżone.</p>
+  <small>100% &ldquo;nienawiści&rdquo; do kserówek!</small>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/hero.js"></script>
+</body>
+</html>
