@@ -3,24 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SYDESIGN CLOUD CMS — Panel Zarządzania</title>
-  <!-- Załadowanie silnika Decap CMS bezpośrednio z chmury CDN -->
-  <script src="[https://unpkg.com/decap-cms](https://unpkg.com/decap-cms)@^3.0.0/dist/decap-cms.js"></script>
+  <title>SYDESIGN CLOUD CMS</title>
+  <!-- Skrypt logowania (Musi być pierwszy!) -->
+  <script src="[https://identity.netlify.com/v1/netlify-identity-widget.js](https://identity.netlify.com/v1/netlify-identity-widget.js)"></script>
 </head>
-  <!-- Skrypt przechwytujący zaproszenie i logowanie Netlify Identity -->
-<script src="[https://identity.netlify.com/v1/netlify-identity-widget.js](https://identity.netlify.com/v1/netlify-identity-widget.js)"></script>
-<script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
-</script>
-
 <body>
+  <!-- Główny skrypt panelu CMS -->
+  <script src="[https://unpkg.com/decap-cms](https://unpkg.com/decap-cms)@^3.0.0/dist/decap-cms.js"></script>
 </body>
-</html>
