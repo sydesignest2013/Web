@@ -1,0 +1,20 @@
+backend:
+  name: github
+  repo: sydesignest2013/Web
+  branch: main # Upewnij się, że to nazwa Twojej głównej gałęzi (main lub master)
+
+media_folder: "images/uploads"
+public_folder: "images/uploads"
+
+collections:
+  - name: "portfolio"
+    label: "Projekty Portfolio"
+    folder: "data/portfolio" # Tutaj CMS zapisze projekty jako pliki JSON
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Nazwa projektu", name: "title", widget: "string" }
+      - { label: "Podtytuł projektu", name: "subtitle", widget: "string" }
+      - { label: "Kategoria", name: "category", widget: "select", options: ["Szaliki", "Koszulki", "Projektowanie"] }
+      - { label: "Notka tekstowa (specyfikacja / opis)", name: "description_note", widget: "text", required: false }
+      - { label: "Kolekcja Zdjęć (Zalecane 3 sztuki)", name: "images", widget: "list", field: { label: "Zdjęcie", name: "image", widget: "image" } }
