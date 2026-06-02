@@ -11,11 +11,6 @@
 <link rel="stylesheet" href="css/socials.css">
 <link rel="stylesheet" href="css/footer.css">
 <link rel="stylesheet" href="css/zamow.css">
-
-	<!-- NETLIFY - PANEL LOGOWANIA -->
-	
-<script src="[https://identity.netlify.com/v1/netlify-identity-widget.js](https://identity.netlify.com/v1/netlify-identity-widget.js)"></script>
-
 </head>
 <body>
 <div class="cur" id="cur"></div>
@@ -219,21 +214,5 @@
 <script src="js/main.js"></script>
 <script src="js/menu.js"></script>
 <script src="js/hero.js"></script>
-
-	<!-- NETLIFY - PANEL LOGOWANIA -->
-	
-	<script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          // Po zalogowaniu przekieruj użytkownika do panelu admina
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
-</script>
-
 </body>
 </html>
